@@ -10,7 +10,7 @@ package g.memory;
  */
 class Carta {
 private String valore;
-boolean cartaCoperta;
+private boolean cartaCoperta;
 boolean cartaNonInGioco;
 
     public String getValore() {
@@ -36,9 +36,13 @@ boolean cartaNonInGioco;
        cartaCoperta=false;
     }
     
+    void copri() {
+       cartaCoperta=true;
+    }
+    
     void togli(){
         this.cartaNonInGioco=true;
  
     }
-    
+   
 }

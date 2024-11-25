@@ -24,12 +24,12 @@ class Giocatore {
     void togliDalGioco(Carta cartaa, Carta cartab) {
         cartaa.togli();
         cartab.togli();
-       
+
     }
 
     void copri(Carta cartaa, Carta cartab) {
-        cartaa.cartaCoperta=true;
-        cartab.cartaCoperta=true;
+        cartaa.copri();
+        cartab.copri();
        
         
     }
